@@ -5,11 +5,14 @@ using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
-    private NavMeshAgent navMeshAgent;
+    [HideInInspector]
+    public NavMeshAgent navMeshAgent;
+    public Animator animator;
 
     private void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -21,8 +24,8 @@ public class PlayerController : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
+                transform.LookAt(hit.point, Vector3.up);
                 navMeshAgent.destination = hit.point;
-                Debug.Log(hit.point);
             }
         }
     }
