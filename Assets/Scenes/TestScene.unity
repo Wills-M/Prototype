@@ -1400,64 +1400,64 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4671151299538960, guid: d49c72aa3d3edd64d97225e4680cd857, type: 3}
   m_PrefabInstance: {fileID: 2144494869}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &821823115629830868
+--- !u!1001 &8930488874619334802
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 820532599191301982, guid: ddbd54a6f44db4d479daf0b62dc62644, type: 3}
+    - target: {fileID: 100004, guid: b1cc94d26cd016d479aa5b522d88da0a, type: 3}
       propertyPath: m_Name
-      value: Character
+      value: RPG-CharacterFREE
       objectReference: {fileID: 0}
-    - target: {fileID: 826399443193962890, guid: ddbd54a6f44db4d479daf0b62dc62644, type: 3}
+    - target: {fileID: 400004, guid: b1cc94d26cd016d479aa5b522d88da0a, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 826399443193962890, guid: ddbd54a6f44db4d479daf0b62dc62644, type: 3}
+    - target: {fileID: 400004, guid: b1cc94d26cd016d479aa5b522d88da0a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 826399443193962890, guid: ddbd54a6f44db4d479daf0b62dc62644, type: 3}
+    - target: {fileID: 400004, guid: b1cc94d26cd016d479aa5b522d88da0a, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 826399443193962890, guid: ddbd54a6f44db4d479daf0b62dc62644, type: 3}
+    - target: {fileID: 400004, guid: b1cc94d26cd016d479aa5b522d88da0a, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 826399443193962890, guid: ddbd54a6f44db4d479daf0b62dc62644, type: 3}
+    - target: {fileID: 400004, guid: b1cc94d26cd016d479aa5b522d88da0a, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 826399443193962890, guid: ddbd54a6f44db4d479daf0b62dc62644, type: 3}
+    - target: {fileID: 400004, guid: b1cc94d26cd016d479aa5b522d88da0a, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 826399443193962890, guid: ddbd54a6f44db4d479daf0b62dc62644, type: 3}
+    - target: {fileID: 400004, guid: b1cc94d26cd016d479aa5b522d88da0a, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 826399443193962890, guid: ddbd54a6f44db4d479daf0b62dc62644, type: 3}
+    - target: {fileID: 400004, guid: b1cc94d26cd016d479aa5b522d88da0a, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 826399443193962890, guid: ddbd54a6f44db4d479daf0b62dc62644, type: 3}
+    - target: {fileID: 400004, guid: b1cc94d26cd016d479aa5b522d88da0a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 826399443193962890, guid: ddbd54a6f44db4d479daf0b62dc62644, type: 3}
+    - target: {fileID: 400004, guid: b1cc94d26cd016d479aa5b522d88da0a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 826399443193962890, guid: ddbd54a6f44db4d479daf0b62dc62644, type: 3}
+    - target: {fileID: 400004, guid: b1cc94d26cd016d479aa5b522d88da0a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8462617499438322469, guid: ddbd54a6f44db4d479daf0b62dc62644, type: 3}
+    - target: {fileID: 8871773326532717059, guid: b1cc94d26cd016d479aa5b522d88da0a, type: 3}
       propertyPath: followingCamera
       value: 
       objectReference: {fileID: 963194228}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ddbd54a6f44db4d479daf0b62dc62644, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: b1cc94d26cd016d479aa5b522d88da0a, type: 3}
