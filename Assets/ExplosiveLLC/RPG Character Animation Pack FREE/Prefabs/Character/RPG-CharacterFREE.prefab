@@ -85,8 +85,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.25
-  m_Speed: 2
-  m_Acceleration: 1
+  m_Speed: 3.5
+  m_Acceleration: 30
   avoidancePriority: 50
   m_AngularSpeed: 0
   m_StoppingDistance: 1
@@ -110,7 +110,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: c2e95077cc5310244b8da7020babb8b1, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
