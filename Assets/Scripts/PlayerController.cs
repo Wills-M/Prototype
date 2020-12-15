@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     [HideInInspector]
     public NavMeshAgent navMeshAgent;
+    [HideInInspector]
     public Animator animator;
 
     private void Start()
@@ -15,9 +16,9 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    private void Update()
+    public void HandleInput()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);

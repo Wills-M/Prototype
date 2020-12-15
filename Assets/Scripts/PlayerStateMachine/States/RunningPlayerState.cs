@@ -21,6 +21,8 @@ public class RunningPlayerState : PlayerState
 
     public override PlayerState Tick()
     {
+        playerController.HandleInput();
+
         if (playerController.navMeshAgent.remainingDistance <= playerController.navMeshAgent.stoppingDistance)
         {
             return new IdlePlayerState(playerController);
