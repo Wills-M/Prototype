@@ -6,9 +6,9 @@ public abstract class PlayerState
 {
     protected PlayerController playerController;
 
-    public PlayerState(PlayerController pc)
+    public PlayerState(PlayerController playerController)
     {
-        playerController = pc;
+        this.playerController = playerController;
     }
 
     public abstract PlayerState Tick();
