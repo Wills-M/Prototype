@@ -18,6 +18,7 @@ public class RollingPlayerState : PlayerState
     public override void Enter()
     {
         playerController.animator.SetTrigger("Rolling");
+        playerController.transform.LookAt(hitpoint, Vector3.up);
 
         Vector3 start = playerController.transform.position;
         Vector3 rollOffset = (hitpoint - start).normalized * rollDistance;

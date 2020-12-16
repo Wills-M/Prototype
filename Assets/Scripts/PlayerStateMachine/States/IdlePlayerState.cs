@@ -28,7 +28,6 @@ public class IdlePlayerState : PlayerState
 
             if (Physics.Raycast(ray, out hit))
             {
-                playerController.transform.LookAt(hit.point, Vector3.up);
                 return new RollingPlayerState(playerController, hit.point);
             }
         }
@@ -39,14 +38,8 @@ public class IdlePlayerState : PlayerState
 
             if (Physics.Raycast(ray, out hit))
             {
-                playerController.transform.LookAt(hit.point, Vector3.up);
-                playerController.navMeshAgent.destination = hit.point;
+                return new RunningPlayerState(playerController, hit.point);
             }
-        }
-
-        if (playerController.navMeshAgent.remainingDistance > playerController.navMeshAgent.stoppingDistance)
-        {
-            return new RunningPlayerState(playerController);
         }
 
         return null;

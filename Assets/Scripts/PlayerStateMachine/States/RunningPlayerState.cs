@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class RunningPlayerState : PlayerState
 {
-    public RunningPlayerState(PlayerController playerController) : base(playerController)
+    private Vector3 hitpoint;
+
+    public RunningPlayerState(PlayerController playerController, Vector3 hitpoint) : base(playerController)
     {
         this.playerController = playerController;
+        this.hitpoint = hitpoint;
     }
 
     public override void Enter()
     {
         playerController.animator.SetTrigger("Running");
+        playerController.transform.LookAt(hitpoint, Vector3.up);
+        playerController.navMeshAgent.destination = hitpoint;
     }
 
     public override void Leave()
@@ -28,7 +33,6 @@ public class RunningPlayerState : PlayerState
 
             if (Physics.Raycast(ray, out hit))
             {
-                playerController.transform.LookAt(hit.point, Vector3.up);
                 return new RollingPlayerState(playerController, hit.point);
             }
         }
@@ -39,8 +43,9 @@ public class RunningPlayerState : PlayerState
 
             if (Physics.Raycast(ray, out hit))
             {
-                playerController.transform.LookAt(hit.point, Vector3.up);
-                playerController.navMeshAgent.destination = hit.point;
+                hitpoint = hit.point;
+                playerController.transform.LookAt(hitpoint, Vector3.up);
+                playerController.navMeshAgent.destination = hitpoint;
             }
         }
 
